@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4</title>
+</head>
+<body>
+    <script>
+        // 1.Use `prompt` to ask the user for their name and store it in a variable.
+        var name=prompt("Enter your name");
+        console.log(name); 
+
+        // 2.Display an alert with a custom message using `alert`.
+        var name=alert("This is a Custom Message");
+        console.log(name) 
+
+        // 3.Get input from the user using `confirm` and store the result in a variable.
+        var name=confirm("Pavi?")
+        console.log(name)
+        if(confirm){
+            console.log("Yes it is pavi")
+        }
+        else{
+            console.log("No it is not pavi")
+        }
+
+        // 4.Use `prompt` to get a number from the user, convert it to a numeric type, and perform an arithmetic operation.
+        var num=prompt("Enter a number");   
+        var num1 = +(num)  
+        console.log(num1+5)
+        
+  //4. Type Conversion:
+ 
+        // 1. Convert a string to a number and perform an arithmetic operation.  
+        var age=prompt("Enter your age");
+        var age1=Number(age)
+        console.log(age1)
+        
+        // 2.Convert a number to a string and concatenate it with another string.
+        let num0=prompt("Enter a number")
+        let num2=String(num);
+        console.log(num1 + "21")
+
+        // 3.Convert a boolean to a string and check its type using `typeof`.
+        let bool= false;
+        let boolstr=bool.toString();
+        console.log(typeof(boolstr));
+
+        // 4.Convert a string to a boolean and evaluate its truthiness.
+        let str="True";
+        let strbool=Boolean(str)
+        console.log(strbool)
+
+        //5. Convert a number to a boolean and check its type using `typeof`.
+        let nu=26;
+        let numbool=Boolean(nu);
+        console.log(typeof(numbool))
+
+        //9. Use the `String` constructor to convert a number to a string.
+        let num3=33;
+        let numstr=String(num3)
+        console.log(numstr)
+
+        //10. Convert a boolean to a number and check its value.
+        let boool= false;
+        let boolnum=Number(boool)
+        console.log(boolnum)
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

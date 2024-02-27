@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+         //1. a. Write a function called calculateRectanglePerimeter that takes the length
+          //and width of a rectangle as input and returns its perimeter.  
+
+         
+          function calculateRectanglePerimeter(length,width){
+            var perimeter=2*(length + width)
+            return perimeter;
+          }
+          var length=5;
+          var width=10;
+          var perimeter=calculateRectanglePerimeter(length,width);
+          console.log("The Perimeter is:",perimeter)
+
+          // 3.Write a function called calculateAgeDifference that takes two birth years
+          // as input using prompt. Convert them to numbers and calculate the age difference
+          // between the two years. Display the result using alert.
+          
+          var birthyear1=prompt("Enter the birthyear1")
+          console.log("Your birthyear is:",birthyear1)
+          var birthyear2=prompt("Enter the birthyear2")
+          console.log("Your birthyear is:",birthyear2)
+          let agedifference=(birthyear1-birthyear2)
+          function calculateAgeDifference(birthyear1,birthyear2){
+           
+            return agedifference;
+          }
+          var agediffernce=calculateAgeDifference(birthyear1,birthyear2)
+          console.log("The agedifference is:",agedifference)
+
+          //4.Write a function called calculatePercentage that takes a number and 
+          //a percentage as input and returns the calculated percentage of the number.
+          // For example, calculatePercentage(100, 20) should return 20. 
+
+
+          function calculatePercentage(num,per){
+            let percentage=(num/per)*100
+            return percentage;
+          }
+          let num=50
+          let per=100;
+          var percentage=calculatePercentage(num,per)
+          console.log("The percentage is:",percentage)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

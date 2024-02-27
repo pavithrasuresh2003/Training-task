@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operators</title>
+</head>
+<body>
+    <script>
+        //1. Scenario: You're developing a website for a clothing store.
+        // Depending on the weather, you want to display different messages on the homepage. 
+        //Write a JavaScript conditional statement using logical operators to display "Stay warm with our winter collection!"
+        // if the temperature is below 10 degrees Celsius, "Enjoy the sunshine with our summer collection!"
+        // if the temperature is above 25 degrees Celsius, and "Check out our all-season collection!" for temperatures in between.
+
+        let whe=prompt("Enter your name");
+        console.log("hi")
+        temp=20;
+        if(temp<10){
+            console.log("Stay warm with our winter collection!")
+        }
+        else if(temp>25){
+            console.log("Enjoy the sunshine with our summer collection!")
+        }
+        else if(temp>=10 && temp<=25){
+            console.log("Check out our all-season collection!")
+        }
+        else{
+            console.log("Not Available")
+        }
+
+        //2. Scenario: You're building a quiz application where users earn badges based on their scores.
+        // Implement a JavaScript conditional statement that assigns badges based on the user's score.
+        // If the score is above 90, they receive a "Gold Badge", if it's between 70 and 90 
+        //(inclusive) they get a "Silver Badge", and if it's below 70 they get a "Bronze Badge".
+
+        let app=prompt("Enter your name");
+        console.log("Hello")
+        score=90;
+        if(score>90){
+            console.log("Gold Badge")
+        }
+        else if(score<70){
+            console.log("Bronze Badge")
+        }
+        else if(score>=70 && score<=90){
+            console.log("Silver Badge")
+        }
+        else{
+            console.log("Not Available")
+        }
+
+        //3.- If the user is under 18 years old, they get a 10% discount on any plan.
+        //    - If the user chooses the "Premium" plan and is over 60 years old, they get a 20% discount.
+        //    - If the user chooses the "Basic" plan, they pay $10 per month.
+        //    - If the user chooses the "Standard" plan, they pay $20 per month.
+        //    - If the user chooses the "Premium" plan, they pay $30 per month.
+
+        let age=prompt("Enter your age")
+        console.log("Your age is : ", age)
+        let plan=prompt("Select a plan")
+        console.log("Your plan is:",plan)
+        
+        let basic=100;
+        let standard=300
+        let premium=500;
+        
+
+         if(age<18 && plan=="standard"){
+            console.log(basic-(10/100)*100)
+            console.log(standard-(10/100)*300)
+            console.log(premium-(10/100)*500)
+            
+         }
+         else if(age>60 && (plan=="premium")){
+            console.log(premium-(20/100)*500)
+
+         }
+         else if(plan=="standard"){
+            console.log("No Discount")
+         }
+         else{
+            console.log("Not Applicable")
+         }
+
+         //4.Suppose you're building a weather application that provides recommendations based
+         // on the temperature and weather conditions. How would you use conditional statements
+         // in JavaScript to suggest activities like "Bring an umbrella" if it's raining, 
+         //or "Wear sunscreen" if it's sunny?
+
+         let name=prompt("Welcome")
+         console.log("Your name is :",name)
+         let whether=prompt("Whether")
+         console.log(" Select whether :",whether)
+
+         if(whether=="Sunny"){
+            console.log("Wear sunscreen")
+         } 
+         else if(whether=="Raining"){
+            console.log("Bring an Umbrella")
+         }
+         else{
+            console.log("It is Winter")
+         }
+
+         //12. Let's say you're developing a quiz application where users need to answer
+         // multiple-choice questions. How would you use logical operators in JavaScript to 
+         //determine if the selected answer is correct or not?
+
+         let apps=prompt("Hyy")
+         console.log("Your name is:",apps)
+         let ques=prompt("Which is the national animal and bird of India?")
+         console.log("Your answer is:",ques)
+
+         let opt1="Tiger";         
+         let selopt="Lion"
+         let iscorrect="Tiger"
+          iscorrect=opt1===selopt
+       
+         
+         if(iscorrect=="Tiger" ){
+            console.log("Correct answer")
+         }
+        
+         else{
+            console.log("Wrong answered")
+         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
